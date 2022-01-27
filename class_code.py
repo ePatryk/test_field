@@ -21,18 +21,4 @@ Southpark = Movie("Miasteczko Southpark", "Comedy", "Kenny", "yt:Southpark")
 
 Southpark.config()
 
-def decorator(func):
-    def wrapper():
-        print ("===============")
 
-        func()
-
-        print ("===============")
-    return wrapper
-
-def foo():
-    print ("jestem udekorowany")
-
-foo = decorator(foo)
-
-foo()
